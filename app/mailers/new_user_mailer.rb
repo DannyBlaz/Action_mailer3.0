@@ -8,6 +8,6 @@ class NewUserMailer < ApplicationMailer
   def new_account
     @greeting = "Hi"
 
-    mail to: "to@example.org"
+    mail to: "to@example.org", subject: "New Account Created"
   end
 end
